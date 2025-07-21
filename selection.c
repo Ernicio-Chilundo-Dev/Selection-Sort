@@ -46,7 +46,7 @@ void selection_sort(int boxes[], int n)
 }
 
 // Main Function
-int maiin(void)
+int main(void)
 {
     // Initialize random weights for thes boxes
     int boxes[SIZE];
@@ -56,6 +56,14 @@ int maiin(void)
     {
         boxes[i] = rand() % 50 + 1; // Initialize weights 1 to 50 kg
     }
-    
+
+    printf("Boxes before sorting:\n");
+    print_array(boxes, SIZE);
+
+    printf("\nSorting boxes by weight...\n\n");
+    selection_sort(boxes, SIZE);
+
+    printf("\nSorted boxes:\n");
+    print_array(boxes, SIZE);
 
 }
