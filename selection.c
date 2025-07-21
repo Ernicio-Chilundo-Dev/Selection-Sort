@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Swap two values
+#define SIZE 6
+
 void swap(int *a, int *b)
 {
     int temp = *a;
@@ -42,4 +43,19 @@ void selection_sort(int boxes[], int n)
             print_array(boxes, n);
         }
     }
+}
+
+// Main Function
+int maiin(void)
+{
+    // Initialize random weights for thes boxes
+    int boxes[SIZE];
+    srand(time(NULL)); // initialize random numbers
+
+    for (int i = 0; i < SIZE; i++)
+    {
+        boxes[i] = rand() % 50 + 1; // Initialize weights 1 to 50 kg
+    }
+    
+
 }
