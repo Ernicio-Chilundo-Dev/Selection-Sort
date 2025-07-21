@@ -25,7 +25,6 @@ This program demonstrates the **Selection Sort** algorithm by sorting an array o
 
 Make sure you have a C compiler (like `gcc`) installed, then run:
 
-```bash
 gcc selection.c -o selection
 
 
@@ -35,6 +34,7 @@ gcc selection.c -o selection
 
 ### Example Output
 
+```bash
 
 Boxes before sorting:
 [23kg] [7kg] [45kg] [12kg] [9kg] [30kg] 
